@@ -116,7 +116,7 @@
                                 ->innerJoin(PedidosProdutos::tableName(), 'pedidos_produtos.produto_id = produtos.id')
                                 ->innerJoin(Pedidos::tableName(), 'pedidos_produtos.pedido_id = pedidos.id')
                                 ->where('pedidos.confirmado=1 AND pedidos_produtos.confirmado=1')
-                                ->orderBy('pedidos_produtos.quantidades')->all();
+                                ->orderBy('pedidos_produtos.quantidade')->all();
 
                             $cont = 0;
                             foreach ($produtos as $produto): $cont++ ?>

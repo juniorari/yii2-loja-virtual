@@ -32,7 +32,7 @@ O projeto consiste numa Loja Virtual construída com o Yii2 Framework. O sistema
 - Adicionar produto no carrinho via Ajax
 - Exibição do carrinho de compras com produtos adicionados, preços, quantidade e valor total
 - Finalização somente com usuário logado
-- COntrole de estoque do produto
+- Controle de estoque do produto
 - Backend com login somente permitido para Admin
 - CRUD de Categorias
 - CRUD de Produtos

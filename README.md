@@ -67,7 +67,7 @@ $ npm install
 
 Criar um Banco de Dados MySQL e alterar o acesso no arquivo:
 ```
-common\config\main-local.php
+common/config/main-local.php
 ```
 ```
 'db' => [

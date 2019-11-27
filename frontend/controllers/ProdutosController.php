@@ -107,7 +107,7 @@ class ProdutosController extends \yii\web\Controller
 
             Yii::$app->session->set('carrinho', []);
 
-            Yii::$app->session->setFlash('success', 'Pedido concluído com sucesso!');
+            Yii::$app->session->setFlash('success', 'Pedido concluído com sucesso! Obrigado por comprar na <strong>' . Yii::$app->name . '</strong>');
             return $this->redirect(['site/index']);
         }
 

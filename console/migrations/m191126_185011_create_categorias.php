@@ -25,6 +25,11 @@ class m191126_185011_create_categorias extends Migration
         $model->nome = "Telefonia";
         $model->save(false);
 
+        $model = new Categorias();
+        $model->parent_id = 3;
+        $model->nome = "Móvel";
+        $model->save(false);
+
 
     }
 

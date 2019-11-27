@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 src: [
                     "js/main.js",
                     "js/locales/fileinput.js",
-                    "js/locales/pt-BR.js",
+                    "js/locales/pt.js",
                 ],
                 dest: "frontend/web/js/main.js"
             }

@@ -157,6 +157,7 @@ class ProdutosController extends Controller
                 $foto5->saveAs($caminho . '/'.$arq);
             }
 
+            Yii::$app->session->setFlash('success', 'Produto cadastrado com sucesso');
             $model->update(false);
             return $this->redirect(['exibir', 'id' => $model->id]);
         }
@@ -237,6 +238,7 @@ class ProdutosController extends Controller
                     $model->foto5 = null;
             }
 
+            Yii::$app->session->setFlash('success', 'Produto atualizado com sucesso');
             $model->update(false);
 
 
@@ -261,8 +263,9 @@ class ProdutosController extends Controller
     {
         $model = $this->findModel($id);
 
-        self::deleteDir($model->localSalvarImagens() . '/' . $model->id);
+        self::deleteDir($model->localSalvarImagens());
 
+        Yii::$app->session->setFlash('success', 'Produto excluído com sucesso');
         $model->delete();
 
         return $this->redirect(['index']);
@@ -287,7 +290,7 @@ class ProdutosController extends Controller
 
     protected function deleteDir($dirPath) {
         if (! is_dir($dirPath)) {
-            throw new \InvalidArgumentException("$dirPath deve ser um diretório!");
+            throw new \InvalidArgumentException("$dirPath deve ser um diretório existente!");
         }
         if (substr($dirPath, strlen($dirPath) - 1, 1) != '/') {
             $dirPath .= '/';

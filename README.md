@@ -9,13 +9,40 @@ Tecnologias utilizadas:
 - [Apache 2](https://httpd.apache.org/download.cgi)
 - [Yii2 Framework](https://www.yiiframework.com/download)
 - [NPM JS](https://www.npmjs.com/)
+- [jQuery](https://code.jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [Composer](https://getcomposer.org/)
 - [Grunt](https://gruntjs.com/)
+- [Krakee Fileinput](https://plugins.krajee.com/file-input)
+- [Krajee Select2](https://demos.krajee.com/widget-details/select2) 
 - [Testes com Codeception](https://codeception.com/)
 - [MySQL](https://www.mysql.com/downloads/)  
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
-Instalação:
+
+Descrição do Projeto
+---
+
+O projeto consiste numa Loja Virtual construída com o Yii2 Framework. O sistema possui as seguintes características:
+
+- Criação de usuário
+- Frontend com login de perfil de Usuário e Admin
+- Listagem de produtos por Categoria
+- Exibição de produto com listagem de fotos via plugin Bootstrap Carousel
+- Adicionar produto no carrinho via Ajax
+- Exibição do carrinho de compras com produtos adicionados, preços, quantidade e valor total
+- Finalização somente com usuário logado
+- COntrole de estoque do produto
+- Backend com login somente permitido para Admin
+- CRUD de Categorias
+- CRUD de Produtos
+- Exibição de Pedidos com produtos adicionados, preços, quantidade e valor total
+- Deleção de pedidos
+- Exibição e Deleção de Usuários
+
+ 
+
+Instruções para Instalação
 --
 No seu diretório localhost, execute o comando:
 

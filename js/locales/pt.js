@@ -11,7 +11,7 @@
 (function ($) {
     "use strict";
 
-    $.fn.fileinputLocales['pt-BR'] = {
+    $.fn.fileinputLocales.pt = {
         fileSingle: 'arquivo',
         filePlural: 'arquivos',
         browseLabel: 'Procurar&hellip;',

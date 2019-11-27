@@ -106,7 +106,7 @@ use kartik\file\FileInput;
                     <?php
                     echo FileInput::widget([
                         'name' => 'foto' . $i,
-                        'language' => 'pt-BR',
+                        'language' => 'pt',
                         'pluginOptions' => ['showPreview' => false,]
                     ]);
                     ?><br/>

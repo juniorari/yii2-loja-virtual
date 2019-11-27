@@ -3,16 +3,10 @@
 
 /* @var $content string */
 
-use frontend\assets\AppAsset;
-use frontend\models\Categorias;
-use frontend\models\Produtos;
-use frontend\models\Pedidos;
-use frontend\models\PedidosProdutos;
-use common\models\User;
+use backend\assets\AppAsset;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
-use yii\helpers\Url;
 
 AppAsset::register($this);
 
